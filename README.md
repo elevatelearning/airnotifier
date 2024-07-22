@@ -33,3 +33,8 @@ Please read [Installation guide](https://github.com/airnotifier/airnotifier/wiki
 
 ## Copyright
 Copyright (c) Dongsheng Cai and individual contributors
+
+```sh
+fly launch --name elevate-learning-airnotifier --region jnb
+fly deploy --local-only
+```

@@ -1,0 +1,13 @@
+# fly.toml file generated for elevate-learning-mongodb on 2023-02-19T11:00:45+02:00
+
+app = "elevate-learning-mongodb"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[experimental]
+  cmd = ["mongod", "--ipv6"]
+
+[mounts]
+  destination = "/var/lib/mongodb"
+  source = "mongodbdata"
